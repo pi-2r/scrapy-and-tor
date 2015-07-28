@@ -14,10 +14,5 @@ RUN apt-get install -y python2.7 python-pip python-dev build-essential libreadli
 # INSTALL SCRAPY and dependencies
 RUN pip install lxml && pip install pyopenssl && pip install Scrapy   && pip install pyopenssl  && pip install beautifulsoup4  && pip install lxml   && pip install elasticsearch   && pip install simplejson   && pip install requests  && rm -rf /var/lib/apt/lists/*
 
-#Entry Point
-#ENTRYPOINT ["/bin/bash"]
-# Starts Tor
-#CMD ["tor"]
-CMD ["bash"]
 
 
